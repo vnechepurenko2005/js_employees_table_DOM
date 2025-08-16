@@ -148,6 +148,7 @@ const pushNotification = (posTop, posRight, title, description, type) => {
   const titleEl = document.createElement('h2');
   const descriptionEl = document.createElement('p');
 
+  element.setAttribute('data-qa', 'notification');
   element.setAttribute('class', `notification ${type}`);
   titleEl.setAttribute('class', 'title');
   titleEl.textContent = title;
